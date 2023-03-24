@@ -1,4 +1,6 @@
 Checkpoints:
+! le decoding n'est pas necessaire a coder, mais un exemple pour le rapport serait bien
+
 0. Comprendre comment fonctionne le QR Code. 
 1. Définir le type d'information que vous souhaitez transmettre à l'aide de votre protocole graphique. Votre protocole doit être capable de transmettre le message de manière fiable et efficace, et cela peut nécessiter l'utilisation de techniques de détection et de correction d'erreurs (algo reed-solomon ou autre pour les erreurs).
     On peut utiliser des techniques telles que la redondance et l'encodage pour augmenter la fiabilité de votre protocole. Par exemple, vous pouvez inclure des bits de parité ou des codes de correction d'erreur pour aider à détecter et à corriger les erreurs dans le message.
@@ -17,7 +19,7 @@ Whereas most of the barcodes you come across are one-dimensional, such as UPC la
 ![qr code structure](./qrcode_structure.webp)
 ![2eme qr code structure](./QRStructure123.png)
 
-Les timing patterns (patterns de synchronisation) dans un QR code sont des bandes qui définissent le positionnement des lignes et des colonnes. Ils permettent de densifier le QR code par l’alternance de modules blancs et noirs, de déterminer la version du QR code et de fournir des positions de référence pour le calcul des coordonnées de chaque module.
+Les timing patterns (patterns de synchronisation) dans un QR code sont des bandes qui définissent le positionnement des lignes et des colonnes. Ils permettent de densifier le QR code par l’alternance de modules blancs et noirs, de déterminer la version du QR code et de fournir des positions de référence pour le calcul des coordonnées de chaque module = permet de determiner la taille d'un pixel. 
 
 ---
 
