@@ -11,10 +11,10 @@ image = Image.new("RGB", (width, height), "white")
 draw = ImageDraw.Draw(image)
 
 # Dessiner un motif en damier sur l'image
-for x in range(0, width, 2):
-    for y in range(0, height, 2):
-        
-        draw.rectangle([x, y, x, y], fill="black")
+for x in range(0, width):
+    for y in range(0, height):
+        if (x + y) % 2 == 0:
+            draw.rectangle([x, y, x, y], fill="black")
 
 # Enregistrer l'image dans un fichier
 image.save("test.png")
