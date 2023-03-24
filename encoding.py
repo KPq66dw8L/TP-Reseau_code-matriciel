@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw
 
 input_to_encode = "Hello World!"
 
-if (len(input_to_encode) > 19 ): #19 char max dans une matrice 21x21
+if (len(input_to_encode) > 19 ): #19 char max pour une matrice 21x21
     print("Message trop long")
     exit()
 
