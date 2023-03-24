@@ -21,10 +21,19 @@ Les timing patterns (patterns de synchronisation) dans un QR code sont des bande
 
 ---
 
-Notre code matriciel:
+#Notre code matriciel:
 
-Version 1: (copie de qr code version 1) 
+##Version 1: (copie de qr code version 1) 
 - Taille de la matrice: 21x21 (comme la version 1 du QR code)
 - Redondance: reed-salomon
 - Niveau de correction (echelle de reed-salomon): L (faible, environ 7% des données du code peuvent être restaurées), il existe aussi M(15%), Q(25%), H(30%)
 - Quantité de stockage: 152 bits = 19 characteres alphanumeriques
+
+###Personnalisation possible pour projet:
+- pixels de couleur pour le positionnement et l'alignement a la place des blocs (se baser sur les couleurs de base d'une imprimante)
+- selon l'orientation lire differents contenu (possible?)
+
+##Version beta 1: lire dans une image (faible resolution), un peu faire de la steganographie 
+
+##Version beta 2: 1 info = une forme et pas un pixel (exemple: triomino ont une orientation et une couleur)
+
